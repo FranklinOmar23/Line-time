@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "date": "27 DIC 2025",
+    "type": "image",
+    "alt": "Salida al cine",
+    "photo": "https://res.cloudinary.com/ducn8lk8o/image/upload/WhatsApp_Image_2026-04-07_at_9.16.20_PM_3_pm5y1s.jpg",
+    "note": "Nuestra 2da cita oficial en el cine, y desde esa noche supe que lo nuestro iba en serio."
+  },
+  {
+    "id": 2,
+    "date": "25 ENE 2026",
+    "type": "image",
+    "alt": "Salida a la playa",
+    "photo": "https://res.cloudinary.com/ducn8lk8o/image/upload/WhatsApp_Image_2026-04-07_at_9.16.20_PM_2_ynyykv.jpg",
+    "note": "Ese dia en la playa me senti en paz contigo, como si ya fueras mi lugar favorito."
+  },
+  {
+    "id": 3,
+    "date": "14 FEB 2026",
+    "type": "image",
+    "alt": "Cena en San Valentin",
+    "photo": "https://res.cloudinary.com/ducn8lk8o/image/upload/WhatsApp_Image_2026-04-07_at_9.16.20_PM_1_hgmche.jpg",
+    "note": "Nuestra cena de San Valentin fue simple y hermosa, de esas noches que se quedan en el corazon."
+  },
+  {
+    "id": 4,
+    "date": "15 MAR 2026",
+    "type": "image",
+    "alt": "Dia en mi casa",
+    "photo": "https://res.cloudinary.com/ducn8lk8o/image/upload/WhatsApp_Image_2026-04-07_at_9.16.20_PM_s7zfpp.jpg",
+    "note": "Ese dia en mi casa confirme que hasta lo cotidiano contigo se siente especial."
+  },
+  {
+    "id": 5,
+    "date": "21 MAR 2026",
+    "type": "video",
+    "alt": "Pedida de noviazgo",
+    "videoPublicId": "WhatsApp_Video_2026-04-07_at_9.16.20_PM_aduidk",
+    "cloudName": "ducn8lk8o",
+    "note": "La pedida de noviazgo que marco un antes y un despues en nuestra historia."
+  }
+]

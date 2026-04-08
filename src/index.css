@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Nanum+Myeongjo:wght@400;700&family=Great+Vibes&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cream: #fff8f1;
+  --rose-petal: #f7dbe2;
+  --rose-soft: #edc3cf;
+  --scroll-progress: 0;
+  --text: #56464d;
+  --text-soft: #876e76;
+  --title: #4f3b43;
+  --card-bg: rgba(255, 250, 245, 0.84);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  font-family: 'Nanum Myeongjo', serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  color: var(--text);
+  background:
+    radial-gradient(
+      130% 80% at 15% -10%,
+      color-mix(in srgb, #ffe8ee calc(85% - var(--scroll-progress) * 45%), #f056aa),
+      transparent 58%
+    ),
+    radial-gradient(
+      100% 60% at 90% 120%,
+      color-mix(in srgb, #fcebdd calc(80% - var(--scroll-progress) * 50%), #d7228a),
+      transparent 56%
+    ),
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #fffdf9 calc(92% - var(--scroll-progress) * 50%), #f95ab2),
+      color-mix(in srgb, var(--cream) calc(88% - var(--scroll-progress) * 46%), #ea2c90)
+        55%,
+      color-mix(in srgb, #fffaf5 calc(94% - var(--scroll-progress) * 54%), #cf0b7a) 100%
+    );
+  transition: background 380ms ease;
+}
+
+body::before,
+body::after {
+  content: '';
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(42px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+body::before {
+  width: 28rem;
+  height: 28rem;
+  left: -10rem;
+  top: -11rem;
+  background: rgba(255, 221, 232, 0.45);
+  animation: floatBlob 12s ease-in-out infinite;
+}
+
+body::after {
+  width: 24rem;
+  height: 24rem;
+  right: -8rem;
+  bottom: -10rem;
+  background: rgba(255, 236, 221, 0.5);
+  animation: floatBlob 14s ease-in-out infinite reverse;
+}
+
+#root {
+  min-height: 100svh;
+  position: relative;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatBlob {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(0, -10px, 0) scale(1.03);
+  }
+}
+
+@keyframes titleGlow {
+  0%,
+  100% {
+    text-shadow: 0 0 0 rgba(255, 170, 209, 0.1);
+  }
+
+  50% {
+    text-shadow: 0 8px 24px rgba(209, 58, 141, 0.22);
+  }
+}
+
+@keyframes shimmerLine {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 0 240px;
+  }
+}
+
+@keyframes softPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
